@@ -1,0 +1,260 @@
+/* ==============================
+   LOGIN
+============================== */
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: white;
+  padding: 38px;
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.25);
+  animation: loginIn 0.35s ease;
+}
+
+@keyframes loginIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+.login-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  border-radius: 16px;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.login-card h2 {
+  margin-bottom: 8px;
+}
+
+.login-card > p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.login-form input {
+  padding: 13px 14px;
+  border: 1px solid #dbe1ea;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.login-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ==============================
+   HEADER USER
+============================== */
+
+.header-user {
+  display: flex;
+  align-items: center;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logout-button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #f1f5f9;
+  transition: 0.2s;
+}
+
+.logout-button:hover {
+  background: #e2e8f0;
+}
+
+.login-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #111827;
+  color: white;
+  transition: 0.25s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+}
+
+
+/* ==============================
+   LOGIN REQUIRED
+============================== */
+
+.login-required {
+  padding: 14px;
+  margin: 18px 0;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 10px;
+  color: #9a3412;
+}
+
+.login-required-card {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 50px 30px;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.login-required-card span {
+  font-size: 45px;
+}
+
+.login-required-card h2 {
+  margin: 15px 0 8px;
+}
+
+
+/* ==============================
+   SESSION EXPIRED
+============================== */
+
+.session-expired {
+  position: fixed;
+  top: 85px;
+  right: 25px;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px 20px;
+
+  background: white;
+
+  border-left: 4px solid #f59e0b;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.15);
+
+  animation: notificationIn 0.35s ease;
+}
+
+@keyframes notificationIn {
+
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+}
+
+.session-expired span {
+  font-size: 24px;
+}
+
+.session-expired p {
+  margin: 3px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.session-expired button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* ==============================
+   PAYMENT
+============================== */
+
+.payment-section {
+  max-width: 650px;
+  margin: 60px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.payment-form input {
+  padding: 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 600px) {
+
+  .login-card {
+    padding: 25px;
+    margin: 15px;
+  }
+
+  .user-menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .session-expired {
+    left: 15px;
+    right: 15px;
+    top: 75px;
+  }
+
+}

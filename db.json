@@ -1,0 +1,124 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Grand Palace Hotel",
+      "location": "Coimbatore",
+      "description": "A luxurious hotel located in the heart of Coimbatore with modern rooms and premium facilities.",
+      "rating": 4.8,
+      "price": 4500,
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+    },
+    {
+      "id": 2,
+      "name": "The Royal Residency",
+      "location": "Chennai",
+      "description": "Elegant accommodation offering comfortable rooms, fine dining and excellent hospitality.",
+      "rating": 4.6,
+      "price": 3800,
+      "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa"
+    },
+    {
+      "id": 3,
+      "name": "Ocean View Resort",
+      "location": "Goa",
+      "description": "A beautiful resort near the beach with spacious rooms and relaxing surroundings.",
+      "rating": 4.9,
+      "price": 6200,
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+    },
+    {
+      "id": 4,
+      "name": "City Comfort Inn",
+      "location": "Bangalore",
+      "description": "Affordable and comfortable rooms suitable for business and leisure travellers.",
+      "rating": 4.3,
+      "price": 2900,
+      "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791"
+    },
+    {
+      "id": 5,
+      "name": "Mountain Breeze Resort",
+      "location": "Ooty",
+      "description": "A peaceful mountain resort surrounded by greenery and beautiful landscapes.",
+      "rating": 4.7,
+      "price": 5100,
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b"
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "hotelId": 1,
+      "roomNumber": "101",
+      "type": "Deluxe Room",
+      "price": 4500,
+      "available": true
+    },
+    {
+      "id": 2,
+      "hotelId": 1,
+      "roomNumber": "102",
+      "type": "Executive Room",
+      "price": 5500,
+      "available": true
+    },
+    {
+      "id": 3,
+      "hotelId": 1,
+      "roomNumber": "201",
+      "type": "Luxury Suite",
+      "price": 7500,
+      "available": true
+    },
+    {
+      "id": 4,
+      "hotelId": 2,
+      "roomNumber": "301",
+      "type": "Standard Room",
+      "price": 3800,
+      "available": true
+    },
+    {
+      "id": 5,
+      "hotelId": 2,
+      "roomNumber": "302",
+      "type": "Deluxe Room",
+      "price": 4700,
+      "available": true
+    },
+    {
+      "id": 6,
+      "hotelId": 3,
+      "roomNumber": "401",
+      "type": "Sea View Room",
+      "price": 6200,
+      "available": true
+    },
+    {
+      "id": 7,
+      "hotelId": 3,
+      "roomNumber": "402",
+      "type": "Premium Suite",
+      "price": 8500,
+      "available": true
+    },
+    {
+      "id": 8,
+      "hotelId": 4,
+      "roomNumber": "501",
+      "type": "Standard Room",
+      "price": 2900,
+      "available": true
+    },
+    {
+      "id": 9,
+      "hotelId": 5,
+      "roomNumber": "601",
+      "type": "Mountain View Room",
+      "price": 5100,
+      "available": true
+    }
+  ],
+  "reservations": []
+}
